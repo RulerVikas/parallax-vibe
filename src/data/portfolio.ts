@@ -3,15 +3,15 @@ export const portfolioData = {
   title: "Computer Science Intern | Front-End Developer | AI Automation Enthusiast",
   contact: {
     email: "vikasdubey2334@gmail.com",
-    phone: "0989213787",
+    phone: "+66989213787",
     location: "Bangkok, Thailand",
     links: {
-      linkedin: "#",
-      github: "#",
-      portfolio: "#"
+      linkedin: "https://www.linkedin.com/in/vikaskumar-dubey/",
+      github: "https://github.com/RulerVikas",
+      portfolio: "https://github.com/RulerVikas"
     }
   },
-  summary: "Innovative Computer Science student passionate about front-end development, automation, and AI-driven solutions. Experienced in building responsive web applications, integrating APIs, and developing smart automation workflows. Known for creativity, problem-solving, and delivering visually engaging, high-performance digital products.",
+  summary: "Dedicated and innovative Computer Science student at KMUTT passionate about creating meaningful and user-friendly web experiences through front-end development. With a strong foundation in API integration, database management, and AI-driven solutions, I enjoy solving problems and bringing ideas to life. My goal is to continue learning and contributing to exciting projects in the tech industry. Collaboration and creativity are at the heart of my work ethic.",
   skills: {
     "Programming": ["JavaScript", "HTML", "CSS", "Node.js"],
     "Frameworks": ["React", "Tailwind CSS"],
@@ -45,6 +45,13 @@ export const portfolioData = {
   ],
   projects: [
     {
+      title: "CampusLink Platform 🎓",
+      stack: ["MERN Stack", "GraphQL", "AWS"],
+      features: ["University student connection platform", "Enhanced communication", "Streamlined services", "Team collaboration"],
+      links: { repo: "https://github.com/KMUTT-CampusLink/campus-client" },
+      tags: ["Web", "Team", "Full-Stack"]
+    },
+    {
       title: "Spotify Clone Web App 🎧",
       stack: ["React", "Tailwind", "Jamendo/iTunes/Deezer APIs"],
       features: ["Trending songs", "Artist search", "Playlist creation", "Bottom player", "Dark mode", "Responsive UI"],
@@ -52,11 +59,39 @@ export const portfolioData = {
       tags: ["Web", "API", "Music"]
     },
     {
-      title: "Smart Parking Detection (YOLO + Arduino) 🚗",
+      title: "Restaurant Website 🍽️",
+      stack: ["React", "Tailwind CSS"],
+      features: ["Responsive design", "Modern UI/UX", "Dynamic content"],
+      links: { live: "https://rulervikas.github.io/Restaurant-Website/" },
+      tags: ["Web", "Design"]
+    },
+    {
+      title: "Smart Parking Detection 🚗",
       stack: ["YOLO", "Python", "Arduino"],
       features: ["Legal/illegal parking detection", "Arduino sound alerts"],
       links: { demo: "#", repo: "#" },
       tags: ["AI", "Computer Vision", "IoT"]
+    },
+    {
+      title: "PhoneZone E-Commerce 📱",
+      stack: ["HTML", "CSS", "JavaScript"],
+      features: ["Mobile device platform", "Optimized UX", "Product catalog"],
+      links: { live: "https://rulervikas.github.io/PhoneZone-website/index.html" },
+      tags: ["Web", "E-Commerce"]
+    },
+    {
+      title: "Bakery Website 🥐",
+      stack: ["HTML", "CSS", "JavaScript"],
+      features: ["Modern design", "Responsive layout", "Interactive elements"],
+      links: { live: "https://rulervikas.github.io/Bakery-Website/" },
+      tags: ["Web", "Design"]
+    },
+    {
+      title: "Coffee Shop ☕",
+      stack: ["HTML", "CSS", "JavaScript"],
+      features: ["Interactive interface", "Dynamic content loading", "Modern design"],
+      links: { live: "https://rulervikas.github.io/Coffee-Shop/" },
+      tags: ["Web", "Design"]
     },
     {
       title: "AI Agentic Workflow System 🤖",
