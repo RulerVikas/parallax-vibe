@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { Menu, X, FileDown } from "lucide-react";
+import { Menu, X, FileDown, Github, Linkedin, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { GlassIcon } from "./GlassIcon";
+import { ShinyText } from "./effects/ShinyText";
+import { portfolioData } from "@/data/portfolio";
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,7 +60,7 @@ export const Navbar = () => {
             ))}
             <Button size="sm" className="bg-gradient-primary hover:opacity-90">
               <FileDown className="w-4 h-4 mr-2" />
-              Resume
+              <ShinyText text="Resume" speed={4} />
             </Button>
           </div>
 

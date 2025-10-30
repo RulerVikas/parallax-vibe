@@ -1,0 +1,100 @@
+.glass-icon-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.glass-icon-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  perspective: 24em;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.glass-icon-btn:hover {
+  transform: translateY(-2px);
+}
+
+.glass-icon-btn:active {
+  transform: translateY(0) scale(0.95);
+}
+
+.glass-icon-back,
+.glass-icon-front {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-icon-back {
+  backface-visibility: hidden;
+  transform: translateZ(-0.25em);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.glass-icon-front {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(0.25em);
+  transition: all 0.3s ease;
+}
+
+.glass-icon-btn:hover .glass-icon-front {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateZ(0.5em);
+}
+
+.glass-icon-btn:hover .glass-icon-back {
+  transform: translateZ(-0.5em);
+}
+
+.glass-icon-symbol {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.glass-icon-label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: hsl(var(--muted-foreground));
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.glass-icon-btn:hover .glass-icon-label {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .glass-icon-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .glass-icon-symbol {
+    font-size: 1.25rem;
+  }
+}

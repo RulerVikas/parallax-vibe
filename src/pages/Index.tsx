@@ -11,15 +11,18 @@ import { Button } from "@/components/ui/button";
 import { portfolioData } from "@/data/portfolio";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { SplashCursor } from "@/components/effects/SplashCursor";
+import { LightRays } from "@/components/effects/LightRays";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      <SplashCursor transparent={true} splatForce={8000} />
       <Navbar />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* 3D Background */}
+        <LightRays raysOrigin="top-center" raysColor="#8a2be2" raysSpeed={1.5} pulsating={true} />
         <div className="absolute inset-0 z-0">
           <Hero3D />
         </div>
