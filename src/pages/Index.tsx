@@ -17,7 +17,7 @@ import { LightRays } from "@/components/effects/LightRays";
 const Index = () => {
   return (
     <div className="min-h-screen relative">
-      <SplashCursor transparent={true} splatForce={8000} />
+      <SplashCursor TRANSPARENT={true} SPLAT_FORCE={8000} />
       <Navbar />
 
       {/* Hero Section */}
